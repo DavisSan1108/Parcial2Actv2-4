@@ -1,0 +1,77 @@
+/* Estilo general para la página en modo oscuro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Fondo principal oscuro */
+    color: #ffffff; /* Texto principal blanco */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1e1e1e; /* Fondo del contenedor oscuro */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Estilos de los títulos */
+h1, h2 {
+    text-align: center;
+}
+
+/* Botones con estilo oscuro */
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #282828; /* Fondo del botón oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #404040; /* Efecto hover en el botón */
+}
+
+/* Estilos para la lista de números */
+.number-list {
+    margin: 20px 0;
+}
+
+/* Contenedor para las dos columnas */
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista de números */
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #282828; /* Fondo oscuro para cada elemento */
+    color: #ffffff; /* Texto blanco */
+    border: 1px solid #333333; /* Borde oscuro */
+    border-radius: 5px;
+    text-align: center;
+}

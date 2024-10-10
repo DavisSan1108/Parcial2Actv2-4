@@ -1,0 +1,126 @@
+/* Fondo de la página con imagen y efecto overlay */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el overlay del fondo */
+.overlay {
+    background: url('istockphoto-1952451271-1024x1024.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen de fondo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 900px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Estilos de los títulos */
+h1, h2 {
+    text-align: center;
+    color: #4B3832; /* Color marrón */
+}
+
+/* Formulario para agregar estudiantes */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    width: 100%;
+    color: #333333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Verde para agregar */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde más oscuro al hacer hover */
+}
+
+/* Estilos para las listas */
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background: #f9f9f9; /* Fondo claro */
+}
+
+/* Estilo de las listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #e7e7e7; /* Fondo gris claro */
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Colores para cada lista */
+ul li.aprobado {
+    background: #d4edda; /* Verde claro */
+    border: 1px solid #c3e6cb;
+}
+
+ul li.reprobado {
+    background: #f8d7da; /* Rojo claro */
+    border: 1px solid #f5c6cb;
+}
+
+/* Texto centrado */
+.column h2 {
+    text-align: center;
+}
+
+/* Ajustes para que las listas tengan scroll si crecen demasiado */
+.column ul {
+    max-height: 300px; /* Altura máxima de la lista */
+    overflow-y: auto; /* Scroll vertical */
+}

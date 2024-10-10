@@ -1,0 +1,114 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo con imagen o color personalizado */
+.overlay {
+    background: url('istockphoto-1556119299-1024x1024.jpg') no-repeat center center fixed; /* Cambia esta URL por la de tu imagen */
+    background-size: cover; /* Ajustar la imagen de fondo para cubrir toda la pantalla */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo translúcido */
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #333333;
+}
+
+/* Formulario */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    width: 100%;
+    color: #333333;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Botón verde */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde más oscuro al hacer hover */
+}
+
+/* Contenedor de lista */
+.list-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #e7e7e7;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Botón para restaurar productos eliminados */
+ul li button {
+    margin-left: 10px;
+    background-color: #FF6347; /* Botón rojo */
+}
+
+ul li button:hover {
+    background-color: #FF4500; /* Botón rojo más oscuro al hacer hover */
+}
+
+/* Contenedor del costo total */
+.total-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#costoTotal {
+    font-size: 24px;
+    font-weight: bold;
+}

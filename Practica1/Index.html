@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Productos - Supermercado</h1>
+        <div class="buttons">
+            <button onclick="agregarProducto()">Agregar Producto</button>
+        </div>
+
+        <div class="status">
+            <h2>Estado del Almacén</h2>
+            <p id="totalProductos">Productos disponibles: 0</p>
+            <p id="productosRetirados">Productos retirados: 0</p>
+        </div>
+
+        <div class="product-list">
+            <h2>Lista de Productos Disponibles</h2>
+            <ul id="listaProductos"></ul>
+        </div>
+
+        <div class="product-list">
+            <h2>Lista de Productos Retirados</h2>
+            <ul id="listaProductosRetirados"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
