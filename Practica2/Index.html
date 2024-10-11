@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Números Pares e Impares - Modo Oscuro</title>
+    <title>Pares e Impares</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Generador de Números Pares e Impares</h1>
-        <div class="buttons">
-            <button onclick="generarNumeros()">Generar 20 Números</button>
+
+        <div class="input-section">
+            <button onclick="generarNumeros()">Generar Números</button>
         </div>
 
-        <div class="number-list">
-            <h2>Números Generados</h2>
-            <div class="column-container">
-                <div class="column">
-                    <h3>Números Pares</h3>
-                    <ul id="columnaPares"></ul>
-                </div>
-                <div class="column">
-                    <h3>Números Impares</h3>
-                    <ul id="columnaImpares"></ul>
-                </div>
+        <div class="columns">
+            <div class="column">
+                <h2>Números Pares</h2>
+                <ul id="columnaPares" class="number-list"></ul>
+            </div>
+            <div class="column">
+                <h2>Números Impares</h2>
+                <ul id="columnaImpares" class="number-list"></ul>
             </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="nodo.js"></script>
+    <script src="lista.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,52 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Productos con Restauración</title>
+    <title>Productos - Agregar, Eliminar y Ordenar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="overlay">
-        <div class="container">
-            <h1>Aplicación de Gestión de Productos</h1>
+    <div class="container">
+        <h1>Gestión de Productos</h1>
 
-            <!-- Formulario para agregar productos -->
-            <div class="form-container">
-                <label for="nombreProducto">Nombre del Producto:</label>
-                <input type="text" id="nombreProducto" placeholder="Ingresa el nombre del producto">
-                <label for="precioProducto">Precio:</label>
-                <input type="number" id="precioProducto" placeholder="Ingresa el precio" min="0">
-                <button onclick="agregarProducto()">Agregar Producto</button>
-            </div>
+        <div class="input-section">
+            <input type="text" id="nombreProducto" placeholder="Nombre del producto">
+            <input type="number" id="precioProducto" placeholder="Precio del producto">
+            <button onclick="agregarProducto()">Agregar Producto</button>
+        </div>
 
-            <!-- Formulario para eliminar productos -->
-            <div class="form-container">
-                <label for="codigoEliminar">Código del Producto para Eliminar:</label>
-                <input type="text" id="codigoEliminar" placeholder="Ingresa el código del producto">
-                <button onclick="eliminarProducto()">Eliminar Producto</button>
-            </div>
+        <div class="input-section">
+            <input type="number" id="claveEliminar" placeholder="Clave del producto a eliminar">
+            <button onclick="eliminarProducto()">Eliminar Producto</button>
+        </div>
 
-            <!-- Mostrar lista de productos -->
-            <div class="list-container">
+        <div class="input-section">
+            <button onclick="ordenarProductos()">Ordenar por Nombre</button>
+        </div>
+
+        <div class="columns">
+            <div class="column">
                 <h2>Lista de Productos</h2>
-                <button onclick="ordenarPorNombre()">Ordenar por Nombre</button>
                 <ul id="listaProductos"></ul>
-            </div>
-
-            <!-- Mostrar productos eliminados -->
-            <div class="list-container">
-                <h2>Productos Eliminados</h2>
-                <ul id="listaEliminados"></ul>
-            </div>
-
-            <!-- Mostrar costo total -->
-            <div class="total-container">
-                <h2>Costo Total</h2>
-                <p id="costoTotal">$0.00</p>
+                <p><strong>Costo Total:</strong> <span id="costoTotal">$0.00</span></p>
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+
+    <script src="lista.js"></script>
+    <script src="nodo.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

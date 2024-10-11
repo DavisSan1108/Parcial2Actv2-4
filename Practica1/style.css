@@ -1,95 +1,98 @@
-/* Estilo general para la página en modo oscuro */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Fondo principal oscuro */
-    color: #ffffff; /* Texto principal blanco */
-    margin: 0;
-    padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilo del contenedor principal */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #1e1e1e; /* Fondo del contenedor oscuro */
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de los títulos */
 h1, h2 {
-    text-align: center;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-/* Botones con estilo oscuro */
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.75em;
+  color: #34495e;
+}
+
+.input-section {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #282828; /* Fondo del botón oscuro */
-    color: #ffffff; /* Texto blanco */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #404040; /* Efecto hover en el botón */
+  background-color: #2980b9;
 }
 
-/* Estado del almacén */
-.status {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilos para la lista de productos */
 .product-list {
-    margin: 20px 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.product-list li {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
-/* Estilos para los elementos de la lista de productos */
-ul li {
-    padding: 10px;
-    margin: 5px 0;
-    background: #282828; /* Fondo oscuro para cada elemento */
-    color: #ffffff; /* Texto blanco */
-    border: 1px solid #333333; /* Borde oscuro */
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.product-list li:hover {
+  background-color: #dfe6e9;
 }
 
-/* Estilos para los botones de eliminar */
-ul li button {
-    margin-left: 10px;
-    background-color: #c82333; /* Botón de eliminar rojo */
-    border: none;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    padding: 5px 10px;
+li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-ul li button:hover {
-    background-color: #a71d2a; /* Efecto hover para el botón de eliminar */
+li button:hover {
+  background-color: #c0392b;
 }
 
-/* Estilo de los contadores de productos */
-ul li span {
-    font-weight: bold;
+#totales {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#totales p {
+  font-size: 1.2em;
+  color: #2c3e50;
+  font-weight: bold;
 }

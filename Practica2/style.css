@@ -1,77 +1,108 @@
-/* Estilo general para la página en modo oscuro */
+/* General styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212; /* Fondo principal oscuro */
-    color: #ffffff; /* Texto principal blanco */
-    margin: 0;
-    padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f5;
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilo del contenedor principal */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #1e1e1e; /* Fondo del contenedor oscuro */
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
 }
 
-/* Estilos de los títulos */
+.container:hover {
+  transform: translateY(-10px);
+}
+
 h1, h2 {
-    text-align: center;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
 }
 
-/* Botones con estilo oscuro */
-.buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+h1 {
+  font-size: 2.5em;
+  color: #2980b9;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.75em;
+  color: #34495e;
+}
+
+/* Input and Button styling */
+.input-section {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #282828; /* Fondo del botón oscuro */
-    color: #ffffff; /* Texto blanco */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #404040; /* Efecto hover en el botón */
+  background-color: #2980b9;
+  transform: translateY(-3px);
 }
 
-/* Estilos para la lista de números */
-.number-list {
-    margin: 20px 0;
+button:active {
+  background-color: #1f6391;
 }
 
-/* Contenedor para las dos columnas */
-.column-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+/* Columns styling */
+.columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .column {
-    flex: 1;
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.column h2 {
+  font-size: 1.5em;
+  color: #16a085;
+  margin-bottom: 15px;
 }
 
-/* Estilos para los elementos de la lista de números */
-ul li {
-    padding: 10px;
-    margin: 5px 0;
-    background: #282828; /* Fondo oscuro para cada elemento */
-    color: #ffffff; /* Texto blanco */
-    border: 1px solid #333333; /* Borde oscuro */
-    border-radius: 5px;
-    text-align: center;
+.number-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.number-list li {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.number-list li:hover {
+  background-color: #d5dbdb;
+  transform: translateY(-2px);
 }

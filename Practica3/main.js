@@ -1,6 +1,6 @@
-// Listas para almacenar los alumnos aprobados y reprobados
-let listaAprobados = [];
-let listaReprobados = [];
+// Inicializar las listas enlazadas para aprobados y reprobados
+const listaAprobados = new Lista();
+const listaReprobados = new Lista();
 
 // Función para agregar un alumno con su calificación
 function agregarAlumno() {
@@ -14,10 +14,11 @@ function agregarAlumno() {
     }
 
     // Clasificar al alumno como aprobado o reprobado
+    const nuevoAlumno = { nombre, calificacion };
     if (calificacion >= 7) {
-        listaAprobados.push({ nombre, calificacion });
+        listaAprobados.agregarNodo(nuevoAlumno);
     } else {
-        listaReprobados.push({ nombre, calificacion });
+        listaReprobados.agregarNodo(nuevoAlumno);
     }
 
     // Limpiar los campos de entrada
@@ -38,7 +39,7 @@ function actualizarUI() {
     listaReprobadosElem.innerHTML = '';
 
     // Mostrar lista de aprobados
-    listaAprobados.forEach(alumno => {
+    listaAprobados.recorrer(alumno => {
         const li = document.createElement('li');
         li.classList.add('aprobado'); // Asignar estilo de aprobado
         li.textContent = `${alumno.nombre} - Calificación: ${alumno.calificacion}`;
@@ -46,7 +47,7 @@ function actualizarUI() {
     });
 
     // Mostrar lista de reprobados
-    listaReprobados.forEach(alumno => {
+    listaReprobados.recorrer(alumno => {
         const li = document.createElement('li');
         li.classList.add('reprobado'); // Asignar estilo de reprobado
         li.textContent = `${alumno.nombre} - Calificación: ${alumno.calificacion}`;
